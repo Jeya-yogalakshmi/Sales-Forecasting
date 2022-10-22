@@ -1,0 +1,91 @@
+.wrapper{
+    margin: 0 auto;
+    margin-top: -5%;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 790px;
+    height: auto;
+    display: flex;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #999999;
+}
+.col-left,
+.col-right{
+    padding: 0px;
+    display: flex;
+}
+.login-text{
+    padding: 20px;
+}
+.col-left{
+    width: 130%;
+    border-radius: 15px 0px 15px 15px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0 );
+    background: #AD1D55;
+    border: #900C3F;
+}
+
+h2{
+    color: #000;
+    font-weight: bolder;
+    font-size: 30px;
+}
+h3{
+    color: #000;
+    font-weight: bolder;
+    font-size: 20px;
+}
+h4{
+    font-size: 40px;
+    color: #900C3F;
+    font-weight: bold;
+}
+p{
+    display: inline-block;
+    font-size: 20px;
+    color: #900C3F;
+    font-weight: bold;
+}
+.contact_form{
+    width: 500px;
+    text-align: center;
+}
+.contact_form input[type=text]{
+	border: none;
+	border-bottom: 2px solid #900C3F;
+	background:transparent;
+	outline: none;
+	height: 35px;
+	color: #900C3F;
+	font-size: 15px;
+}
+
+.contact_form input[type=password]{
+	border: none;
+	border-bottom: 2px solid #900C3F;
+	background:transparent;
+	outline: none;
+	height: 35px;
+	color: #900C3F;
+	font-size: 15px;
+}
+
+button{
+     color: #900C3F;
+     font-weight: bold;
+     font-size: 20px;
+     border: 2px solid #900C3F !important;
+     border-radius: 25px;
+     padding: 7px 45px 7px 45px;
+     border: none;
+}

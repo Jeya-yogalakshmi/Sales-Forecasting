@@ -1,0 +1,28 @@
+<br>
+<div class="text-center">
+<h5>Enter the File to predict the sales</h5>
+<br>
+	<form (ngSubmit)="onUpload(form.value)" [formGroup]="form" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+		<p>Enter the csv file of the sales report</p>
+		<input class="form-control" type="file" name="file" formControlName="file" (change)="getFile($event)" ><br><br>
+		</div>
+        <br>
+	<div class="form-group">
+		<p>Enter the Number of month/year</p>
+		<select class="period" formControlName="period" id="period">
+			<option value="monthly" selected>Monthly</option>
+			<option value="Yearly">Yearly</option>
+		</select>
+		<input type="text" formControlName="date">
+		<br><br>
+	</div>
+		<input type="submit" id="button" value ="Upload"><br><br>
+	</form>
+</div>
+
+<!--Flag variable is used here-->
+<div class="container" *ngIf="loading">
+	<h3>Loading ...</h3>
+</div>
+

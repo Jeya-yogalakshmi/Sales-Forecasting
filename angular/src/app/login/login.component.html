@@ -1,0 +1,25 @@
+<div class="wrapper">
+<div class="container">
+  <div class="col-left">
+      <div class="login-text">
+          <h2>Welcome</h2>
+          <h3>Predict your future<br>Sales value</h3>
+      </div>
+  </div>
+  <div class="col-right">
+<div class="contact_form">
+    <form [formGroup]="form" (submit)="onSubmit()">
+      <h4>Login</h4>
+      <p style="margin-right: 50px;"> Email Id: </p><input type="text" class="Input" id="email" name="email" formControlName="email" required><br>
+      <div *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched)" class="alert alert-danger">
+          Email Id is required.
+    </div><br><br>
+      <p style="margin-right: 50px;"> Password: </p><input type="password" id="pwd" formControlName="pwd" required><br>
+      <div *ngIf="form.controls['pwd'].invalid && (form.controls['pwd'].dirty || form.controls['pwd'].touched)" class="alert alert-danger">
+        Password is required.
+      </div><br><br>
+      <button type="submit">Submit</button><br><br><br>
+    </form>
+  </div>
+</div>
+</div>
